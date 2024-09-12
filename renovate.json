@@ -1,9 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>renovatebot/.github"],
-  "enabledManagers": [
-    "github-actions"
-  ],
+  "enabledManagers": ["github-actions"],
   "dependencyDashboardApproval": false,
   "customManagers": [
     {
@@ -21,7 +19,7 @@
       "matchManagers": ["github-actions"]
     },
     {
-      "matchManagers": ["regex"],
+      "matchManagers": ["custom.regex"],
       "matchPackageNames": ["dbrenecki/renovate-debug"],
       "extractVersion": "^(?<compatibility>.*)/(?<version>.*)$"
     }
