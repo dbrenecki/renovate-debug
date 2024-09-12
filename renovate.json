@@ -4,6 +4,7 @@
   "enabledManagers": [
     "github-actions"
   ],
+  "dependencyDashboardApproval": false,
   "packageRules": [
     {
       "automerge": false,
