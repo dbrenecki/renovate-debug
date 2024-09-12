@@ -3,25 +3,10 @@
   "extends": ["github>renovatebot/.github"],
   "enabledManagers": ["github-actions"],
   "dependencyDashboardApproval": false,
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["\\.github/workflows/.+\\.yaml"],
-      "matchStrings": [
-        "uses: (?<depName>.*)/.github/actions/checkmarx@checkmarx/(?<currentValue>.*)"
-      ],
-      "datasourceTemplate": "semver"
-    }
-  ],
   "packageRules": [
     {
       "automerge": false,
       "matchManagers": ["github-actions"]
-    },
-    {
-      "matchManagers": ["custom.regex"],
-      "matchPackageNames": ["dbrenecki/renovate-debug"],
-      "extractVersion": "^checkmarx/(?<version>.*)$"
     }
   ]
 }
