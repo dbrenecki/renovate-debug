@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: dbrenecki/renovate-debug/.github/actions/checkmarx@v0.0.1
+      - uses: dbrenecki/renovate-debug/.github/actions/checkmarx@checkmarx/v0.0.1
