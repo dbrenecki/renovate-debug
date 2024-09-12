@@ -21,7 +21,7 @@
     {
       "matchManagers": ["custom.regex"],
       "matchPackageNames": ["dbrenecki/renovate-debug"],
-      "versionCompatibility": "^(?<compatibility>.*)/(?<version>.*)$"
+      "extractVersion": "^checkmarx/(?<version>.*)$"
     }
   ]
 }
