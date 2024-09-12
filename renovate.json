@@ -21,10 +21,9 @@
       "matchManagers": ["github-actions"]
     },
     {
-      "automerge": false,
-      "matchDatasources": ["github-tags"],
+      "matchManagers": ["regex"],
       "matchPackageNames": ["dbrenecki/renovate-debug"],
-      "versionCompatibility": "^(?<compatibility>.*)/(?<version>.*)$"
+      "extractVersion": "^checkmarx/(?<version>.*)$"
     }
   ]
 }
