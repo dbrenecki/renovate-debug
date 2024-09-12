@@ -10,7 +10,7 @@
       "customType": "regex",
       "fileMatch": ["\\.github/workflows/checkmarx\\.yaml"],
       "matchStrings": [
-        "uses: dbrenecki/renovate-debug/\\.github/actions/checkmarx@(?<currentValue>.*)"
+        "uses: (?<depName>.*)/\\.github/actions/checkmarx@(?<currentValue>.*)"
       ],
       "datasourceTemplate": "semver"
     }
