@@ -11,7 +11,7 @@
     {
       "matchDatasources": ["github-tags"],
       "matchDepNames": ["dbrenecki/renovate-debug"],
-      "versionCompatibility": "^(?compatibility>.*)/(?<version>.*)$"
+      "versionCompatibility": "^(?<compatibility>.*)/(?<version>.*)$"
     }
   ]
 }
