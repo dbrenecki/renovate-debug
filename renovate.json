@@ -8,7 +8,7 @@
       "customType": "regex",
       "fileMatch": ["\\.github/workflows/.+\\.yaml"],
       "matchStrings": [
-        "uses: (?<depName>.*)/\\.github/actions/checkmarx@checkmarx/(?<currentValue>.*)"
+        "uses: (?<depName>.*)/.github/actions/checkmarx@checkmarx/(?<currentValue>.*)"
       ],
       "datasourceTemplate": "semver"
     }
