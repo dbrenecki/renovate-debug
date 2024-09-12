@@ -13,8 +13,7 @@
       "automerge": false,
       "matchDatasources": ["github-tags"],
       "matchDepNames": ["dbrenecki/renovate-debug"],
-      "versionCompatibility": "^(?<compatitiblity>.*)/(?<version>.*)$",
-      "versioning": "docker"
+      "versionCompatibility": "^(?<compatitiblity>.*)/(?<version>.*)$"
     }
   ]
 }
