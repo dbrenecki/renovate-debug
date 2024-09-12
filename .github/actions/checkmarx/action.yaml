@@ -4,3 +4,5 @@ runs:
   steps:
     - name: Calculate cache keys
       run: echo 'hello world'
+      shell: bash
+
