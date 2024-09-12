@@ -12,7 +12,7 @@
     {
       "automerge": false,
       "matchDatasources": ["github-tags"],
-      "matchDepNames": ["dbrenecki/renovate-debug"],
+      "matchPackageNames": ["dbrenecki/renovate-debug"],
       "versionCompatibility": "^(?<compatibility>.*)/(?<version>.*)$"
     }
   ]
