@@ -6,9 +6,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["\\.github/workflows/(?<compatibility>.*)\\.yaml"],
+      "fileMatch": ["\\.github/workflows/checkmarx\\.yaml"],
       "matchStrings": [
-        "uses: (?<depName>.*)/\\.github/actions/(?<compatibility>.*)@(?<currentValue>.*)"
+        "uses: (?<depName>.*)/\\.github/actions/checkmarx@(?<currentValue>.*)"
       ],
       "datasourceTemplate": "semver"
     }
@@ -21,7 +21,7 @@
     {
       "matchManagers": ["custom.regex"],
       "matchPackageNames": ["dbrenecki/renovate-debug"],
-      "extractVersion": "^(?<compatibility>.*)/(?<version>.*)$"
+      "extractVersion": "^checkmarx/(?<version>.*)$"
     }
   ]
 }
