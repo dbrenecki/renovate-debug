@@ -5,6 +5,16 @@
     "github-actions"
   ],
   "dependencyDashboardApproval": false,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.github/workflows/checkmarx\\.yaml"],
+      "matchStrings": [
+        "uses: dbrenecki/renovate-debug/\\.github/actions/checkmarx@(?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "semver"
+    }
+  ],
   "packageRules": [
     {
       "automerge": false,
