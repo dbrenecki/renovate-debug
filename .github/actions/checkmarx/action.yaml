@@ -1,8 +1,6 @@
 name: Checkmarx test action
 runs:
-  using: 'composite'
+  using: composite
   steps:
-    - name: Calculate cache keys
-      run: echo 'hello world'
+    - run: echo 'hello world'
       shell: bash
-
